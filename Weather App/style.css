@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.background-shapes .square,
+.background-shapes .circle {
+  position: absolute;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  opacity: 0.2;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    top: 20%;
+    left: 10%;
+    animation: float 5s infinite ease-in-out;
+  }
+  
+  .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    bottom: 10%;
+    right: 10%;
+    animation: float 6s infinite ease-in-out;
+  }
+  @keyframes float {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-20px); }
+  }
+  .container {
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 20px #00f2fe55;
+  }
+  input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+  }
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background: #00f2fe;
+    color: #000;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .weatherInfo {
+    margin-top: 20px;
+    font-size: 1.1rem;
+  }
